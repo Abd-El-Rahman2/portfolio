@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdelrahman Ahmed — Portfolio</title>
+<style>
+:root{
+  --bg:#f4f7fb;--panel:#ffffff;--ink:#0b1220;--muted:#475569;--accent:#0e7490;--accent-soft:#cffafe;--line:#e2e8f0;--hero:#0b1220;--hero-ink:#ffffff;--hero-muted:#94a3b8;--hero-accent:#22d3ee;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--panel:#131c2e;--ink:#f1f5f9;--muted:#94a3b8;--accent:#22d3ee;--accent-soft:#0e3a4a;--line:#1e2a44;--hero:#080d18}}
+:root[data-theme="dark"]{--bg:#0b1220;--panel:#131c2e;--ink:#f1f5f9;--muted:#94a3b8;--accent:#22d3ee;--accent-soft:#0e3a4a;--line:#1e2a44;--hero:#080d18}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Calibri,"Segoe UI",Arial,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Cambria,Georgia,"Times New Roman",serif;margin:0}
+a{color:inherit}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--hero);display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;flex-wrap:wrap;gap:8px}
+nav b{font-family:Cambria,Georgia,serif;color:var(--hero-ink);font-size:18px}
+nav div{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--hero-muted);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--hero-accent)}
+.hero{background:var(--hero);color:var(--hero-ink);padding:9vh 5vw 11vh}
+.wrap{max-width:1000px;margin:0 auto}
+.hero .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.tag{color:var(--hero-accent);letter-spacing:.35em;font-size:13px;font-weight:700}
+.hero h1{font-size:clamp(38px,7vw,64px);line-height:1.1;margin:10px 0 14px}
+.hero p{color:var(--hero-muted);font-size:18px;max-width:520px;margin:0 0 26px}
+.btn{display:inline-block;background:var(--hero-accent);color:#0b1220;padding:12px 24px;border-radius:8px;font-weight:700;text-decoration:none;margin-right:10px}
+.btn.alt{background:transparent;color:var(--hero-ink);border:1px solid #334155}
+.badge{width:200px;height:200px;border-radius:50%;border:3px solid var(--hero-accent);display:grid;place-items:center;flex:none}
+section{padding:70px 5vw}
+h2{font-size:34px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-size:20px;margin-bottom:6px}
+.card p{margin:0;color:var(--muted)}
+.chip{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.stat{text-align:center;padding:18px 8px}
+.stat b{display:block;font-family:Cambria,Georgia,serif;font-size:42px}
+.stat span{color:var(--muted);font-size:14px}
+.cert{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 20px;margin-bottom:10px}
+.cert b{font-size:16px}
+.cert span{color:var(--muted);font-size:14px}
+.prog{color:#047857;font-weight:700}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .prog{color:#34d399}}
+:root[data-theme="dark"] .prog{color:#34d399}
+.contact{background:var(--hero);color:var(--hero-ink);text-align:center}
+.contact h2{font-size:clamp(30px,5vw,44px)}
+.contact p{color:var(--hero-muted)}
+.contact .row{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.contact .row a{color:var(--hero-accent);text-decoration:none;overflow-wrap:anywhere}
+footer{background:var(--hero);color:var(--hero-muted);text-align:center;padding:18px 5vw calc(18px + env(safe-area-inset-bottom,0px));font-size:13px}
+</style>
+</head>
+<body>
+<nav><b>AA</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <div class="tag">PORTFOLIO</div>
+    <h1>Abdelrahman Ahmed</h1>
+    <p>Software Engineer · Full-Stack Developer · Penetration Tester. Computer Science student in Cairo, building practical software and learning how to secure it.</p>
+    <a class="btn" href="#projects">View projects</a><a class="btn alt" href="#contact">Get in touch</a>
+  </div>
+  <div class="badge"><svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5z"/><path d="m9 12 2 2 4-4" stroke-linecap="round"/></svg></div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p style="max-width:700px;color:var(--muted);font-size:17px;margin:0">Motivated and detail-oriented Computer Science student at El-Shorouk Academy (2023–2027) with hands-on experience in full-stack web development, database design, and systems analysis. Proficient in C, C++, C#, HTML, CSS, and JavaScript, with a growing focus on web security, ethical hacking, and penetration testing.</p>
+  <div class="stats">
+    <div class="card stat"><b>5</b><span>Certifications</span></div>
+    <div class="card stat"><b>4</b><span>Projects</span></div>
+    <div class="card stat"><b>3</b><span>Focus areas</span></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills &amp; technologies</h2>
+  <div class="grid">
+    <div class="card"><h3>Languages</h3><p>C, C++, C#, JavaScript, HTML5, CSS3</p></div>
+    <div class="card"><h3>Web development</h3><p>PHP Full Stack, Node.js, React, PostgreSQL, RESTful APIs, Web3 &amp; DApps</p></div>
+    <div class="card"><h3>Mobile &amp; desktop</h3><p>Flutter mobile apps, desktop applications</p></div>
+    <div class="card"><h3>Cybersecurity</h3><p>Ethical hacking, mobile penetration testing, network security</p></div>
+    <div class="card"><h3>Tools &amp; systems</h3><p>Visual Studio, VS Code, CLion, Git, Linux, Windows, Cisco Packet Tracer</p></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><span class="chip">ITI · PHP Full Stack</span><h3>Quran Website</h3><p>Full-stack web application built during the ITI PHP Full Stack program.</p></div>
+    <div class="card"><span class="chip">Desktop application</span><h3>Prison Management System</h3><p>Desktop app for managing prison records and operations.</p></div>
+    <div class="card"><span class="chip">Flutter · Mobile</span><h3>School Attendance App</h3><p>Cross-platform mobile app for tracking school attendance.</p></div>
+    <div class="card"><span class="chip">NTI · Cyber Security</span><h3>Phishing Detector Tool</h3><p>Security tool that detects phishing attempts, built in the NTI cyber security program.</p></div>
+  </div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+  <h2>Certifications</h2>
+  <div class="card cert"><b>PHP Full Stack Web Development</b><span>120 hours</span></div>
+  <div class="card cert"><b>Ethical Hacker · Cisco Networking Academy</b><span>70 hours</span></div>
+  <div class="card cert"><b>Mobile Penetration Testing · Orange Digital Center</b><span>Android / iOS</span></div>
+  <div class="card cert"><b>Complete Full-Stack Web Development Bootcamp · Udemy</b><span>Node.js, React, PostgreSQL, Web3</span></div>
+  <div class="card cert"><b>IBM Full Stack Software Development</b><span class="prog">205 hours · In progress</span></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Let's build secure software.</h2>
+  <p>Open to feedback, collaboration, and opportunities.</p>
+  <div class="row">
+    <a href="mailto:abdelrahmansabour1@gmail.com">abdelrahmansabour1@gmail.com</a>
+    <a href="tel:+201118822624">+20 1118822624</a>
+    <span>Cairo, Egypt</span>
+  </div>
+</div></section>
+<footer>© Abdelrahman Ahmed · Arabic (native) · English (very good)</footer>
+</body>
+</html>
